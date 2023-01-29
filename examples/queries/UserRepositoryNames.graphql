@@ -1,0 +1,13 @@
+query ($user: String!, $count: Int = 2, $endCursor: String) {
+  user(login: $user) {
+    repositories(first: $count, after: $endCursor) {
+      nodes {
+        name
+      }
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+    }
+  }
+}
