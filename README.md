@@ -1,6 +1,6 @@
 # gh-graphql-examples
 
-https://github.com/cli/cli
+I use [GitHub CLI](https://github.com/cli/cli).
 
 ### [Me](./examples/queries/Me.graphql)
 ```sh
