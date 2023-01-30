@@ -1,6 +1,6 @@
-query ($user: String!, $count: Int = 2, $endCursor: String) {
+query ($user: String!, $count: Int = 100, $cursor: String) {
   user(login: $user) {
-    repositories(first: $count, after: $endCursor) {
+    repositories(first: $count, after: $cursor) {
       nodes {
         name
       }
