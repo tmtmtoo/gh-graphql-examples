@@ -1,8 +1,9 @@
-query ($user: String!, $count: Int = 100, $cursor: String) {
+query UserRepositories($user: String!, $count: Int = 100, $cursor: String) {
   user(login: $user) {
     repositories(first: $count, after: $cursor) {
       nodes {
         name
+        id
       }
       pageInfo {
         hasNextPage

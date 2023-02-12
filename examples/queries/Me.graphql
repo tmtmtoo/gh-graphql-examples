@@ -1,4 +1,4 @@
-query {
+query Me {
   viewer {
     login
     name
